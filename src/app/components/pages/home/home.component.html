@@ -1,0 +1,35 @@
+<app-search></app-search>
+<ul class="mt-5">
+  <li *ngFor="let product of products">
+    <a routerLink="/product/{{product.id}}">
+      <img [src]="product.imageUrl" [alt]="product.name"/>
+
+      <div class="content">
+        <div class="name">
+          {{product.name}}
+        </div>
+
+        <span class="favorite {{ product.favorite ? '' : 'not' }}">
+          ♥
+        </span>
+
+        <div class="stars">
+
+        </div>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let origin of product.origins">
+              {{origin}}
+            </span>
+          </div>
+          <div class="time">
+            {{product.time}} min
+          </div>
+        </div>
+        <div class="price">
+          {{ product.price | currency: 'BRL'}}
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

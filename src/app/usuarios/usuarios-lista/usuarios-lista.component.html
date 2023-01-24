@@ -1,0 +1,42 @@
+<div class="container mt-4">
+
+  <div class="card-total">
+    <div class="card-cabecalho">
+      <h2>Usuários</h2>
+      <div class="botoes">
+        <div class="btn btn-novo" style="margin-right: 6px ;">Novo Usuário</div>
+        <div class="btn btn-atualizar">Atualizar</div>
+      </div>
+    </div>
+
+    <app-usuario-search></app-usuario-search>
+
+    <div class="card-corpo">
+      <div class="container">
+        <table class="table" >
+          <thead style="background-color:#412234 ; color: white;">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">CPF</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of usuarios">
+              <td>{{usuario.id}}</td>
+              <td>{{usuario.name}}</td>
+              <td>{{usuario.email}}</td>
+              <td>{{usuario.cpf}}</td>
+              <td>
+                <button style="margin-right:5px; background-color: darkcyan; color:white; border-radius:0.2rem; border:none;">Editar</button>
+                <button style="margin-right:5px; background-color: darkred; color:white; border-radius:0.2rem; border:none;">Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

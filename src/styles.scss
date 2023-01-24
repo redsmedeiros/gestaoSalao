@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+html,
+button{
+  font-family: "Quicksand", "sans-serif";
+}
+
+body{
+  background-color: #ead7d7;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn-novo{
+  background-color: darkgray;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-fechar{
+  background-color: darkred;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-fechar:hover{
+  background-color: rgb(160, 0, 0);
+  cursor: pointer;
+}
+
+.btn-editar{
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-editar:hover{
+  background-color: rgb(0, 125, 0);
+  cursor: pointer;
+}
+
+.btn-novo:hover{
+  background-color: rgb(195, 193, 193);
+  cursor: pointer;
+}
+
+.btn-atualizar{
+  background-color: darkgoldenrod;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-atualizar:hover{
+  background-color: rgb(213, 156, 11);
+  color: white;
+}
+
+.btn-buscar{
+  background-color: #6d466b;
+  color: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: bold;
+  padding: 1rem 1.6rem;
+}
+
+.btn-buscar:hover{
+  background-color: #B49FCC;
+  color: #6d466b;
+  cursor: pointer;
+}
+
+

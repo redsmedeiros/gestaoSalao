@@ -1,0 +1,30 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Sabrina",
+      "cpf": "079.456.321.16",
+      "email": "sab@teste.com",
+      "password": "123456",
+      "ativo": true
+    },
+    {
+      "id": 1,
+      "name": "Maite",
+      "cpf": "079.456.321.16",
+      "email": "maite@teste.com",
+      "password": "123456",
+      "ativo": true
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

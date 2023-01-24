@@ -1,0 +1,18 @@
+<div class="container-buscar">
+
+  <button class="btn-buscar" (click)="habilitar()">{{habilita ? textBtn.fechar : textBtn.buscar}}</button>
+  <div *ngIf="habilita" style="width: 100%; padding: 0.8rem; margin: 0;">
+    <div>
+        <input [(ngModel)]="nome" placeholder="Buscar por nome" type="text" style="margin-right: 8px ; width:60%;"/>
+        <input placeholder="Buscar por CPF" type="text" style="width: 39% ;" [(ngModel)]="cpf"/>
+    </div>
+    <div class="mt-2">
+      <input placeholder="Buscar por email" type="email" style="margin-right: 5px ; width:100%;" [(ngModel)]='email'/>
+  </div>
+  </div>
+  <div *ngIf="habilita" class="botao-buscar">
+    <button  class="btn-novo buscar" (click)="search(nome, cpf, email)">Buscar</button>
+    <button  class="btn-fechar fechar">Limpar</button>
+  </div>
+
+</div>
