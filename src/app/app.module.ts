@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,6 +10,9 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './components/partials/search/search.component';
+import { TagsComponent } from './components/partials/tags/tags.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 
 
 
@@ -17,7 +21,8 @@ import { SearchComponent } from './components/partials/search/search.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,9 @@ import { SearchComponent } from './components/partials/search/search.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule.forRoot(),
+    SharedModule
 
   ],
   providers: [],

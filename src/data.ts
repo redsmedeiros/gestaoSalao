@@ -1,4 +1,4 @@
-import { tag } from './app/shared/models/Tag';
+import { Tag } from './app/shared/models/Tag';
 import { Product } from "./app/shared/models/Product";
 
 export const sample_products: Product[] = [
@@ -26,7 +26,7 @@ export const sample_products: Product[] = [
   }
 ]
 
-export const sample_tags: tag[] = [
+export const sample_tags: Tag[] = [
   {name: 'All', count: 2},
   {name: 'Hidratação', count: 1},
   {name: 'Corte Feminino', count: 1}

@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { Usuario } from './../shared/models/Usuario';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -8,7 +9,7 @@ import { delay, Observable } from 'rxjs';
 })
 export class UsuariosService {
 
-  private readonly API: string = 'http://localhost:3000/usuarios'
+  private readonly API: string = `${environment.API}usuarios`
 
 
   constructor(private httpCliente: HttpClient) { }

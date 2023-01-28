@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common';
 import { UsuariosRoutingModule } from './usuarios-routing.module';
 import { UsuariosListaComponent } from './usuarios-lista/usuarios-lista.component';
 import { UsuarioSearchComponent } from './usuario-search/usuario-search.component';
+import { UsuariosFormComponent } from './usuarios-form/usuarios-form.component';
 
 
 @NgModule({
   declarations: [
     UsuariosListaComponent,
-    UsuarioSearchComponent
+    UsuarioSearchComponent,
+    UsuariosFormComponent
   ],
   imports: [
     CommonModule,

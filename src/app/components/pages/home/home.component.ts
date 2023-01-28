@@ -20,6 +20,8 @@ export class HomeComponent implements OnInit {
     this.activatedRoute.params.subscribe((params)=>{
       if(params['searchTerm']){
         this.products = this.productService.getAllProductsBySearchTerm(params['searchTerm'])
+      }else if(params['tag']){
+        this.products = this.productService.getAllProductsByTag(params['tag'])
       }else{
         this.products = this.productService.getAll()
       }
